@@ -86,26 +86,7 @@ Feature: Add product to cart and checkout on Sauce Demo
     And I proceed to checkout with my details
 ```
 
----
 
-## Logging cu SLF4J
-
-- Înlocuiește toate `System.out.println` cu logger SLF4J.
-- Exemple:
-
-```java
-private static final Logger logger = LoggerFactory.getLogger(CheckOutSteps.class);
-logger.info("[STEP] Opening Sauce Demo site");
-logger.error("Scenario failed", exception);
-```
-
-- Tipuri de log:
-  - `logger.info()` - informații generale.
-  - `logger.debug()` - mesaje pentru debug.
-  - `logger.error()` - erori.
-  - `logger.trace()` - mesaje foarte detaliate, pentru urmărirea fluxului intern.
-
----
 
 ## Considerații și bune practici
 
